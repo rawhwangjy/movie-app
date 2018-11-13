@@ -2,10 +2,26 @@
     .movie_list{
         list-style-type: none;
         &:after{content:""; display:block; clear:both;}
-        li{
-            width:400px;
+        >li{
+            box-sizing:border-box;
+            float:left;
+            width:46%;
             height:auto;
-            img{width:100%; height:100%;}
+            padding:20px;
+            background:#f4f4f4;
+            &:nth-child(odd){margin-right:4%;}
+            img{width:80%; height:auto;}
+            h1{}
+            .genres{
+                &:after{content:""; display:block; clear:both;}
+                .genre{
+                    float:left;
+                    padding-right:20px;
+                }
+            }
+            .synopsis{
+                width:80%;
+            }
         }
     }
 }
